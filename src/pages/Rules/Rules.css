@@ -1,0 +1,98 @@
+.rules-page{
+      background-color: var(--high-gray);
+      width: 100vw;
+      min-height: 100vh;
+      height: 100%;
+      padding-top: 20px;
+      padding-bottom: 50px;
+}
+
+.text-div{
+      position: relative;
+      /* animation: regras-init 1s; */
+
+      background-color: var(--medium-gray);
+      color: white;
+
+      max-width: 600px;
+      padding: 20px;
+
+      border: 2px solid var(--orange);
+      border-radius: 20px;
+  
+      margin-left: auto;
+      margin-right: auto;
+      
+
+      box-shadow: 7px 14px 10px rgba(0, 0, 0, 0.454);
+}
+.text-navbar{
+      display: flex;
+      flex-direction: row;
+
+      color: var(--orange);
+      font-size: 40px;
+}
+.my-btn{
+      width: fit-content;
+      padding-left: 10px;
+      padding-right: 10px;
+}
+.my-btn:hover{
+      cursor: pointer;
+}
+#button-left{
+      border: 2px solid var(--yellow);
+      margin-right: auto;
+}
+#button-right{
+      border: 2px solid var(--yellow);
+      margin-left: auto;
+}
+
+.text-title{
+      font-family: 'Fredoka One', cursive;
+      font-size: 60px;
+      font-weight: 400;
+
+      background: -webkit-linear-gradient(var(--yellow), var(--red));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      width: fit-content;
+      
+      margin-left: auto;
+      margin-right: auto;
+      
+}
+
+.text-parag{
+      /* border-bottom: 2px solid var(--yellow); */
+      margin-bottom: 30px;
+      animation: text-appear 2s;
+}
+.text-tag{
+      color: var(--yellow);
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 15px;
+}
+.text-list{
+      margin-left: 30px;
+}
+.text{
+      color: #eee;
+      font-weight: 500;
+      margin-bottom: 5px;
+}
+
+
+:root{
+      --red: rgb(200, 30, 0);
+      --orange: rgb(255, 80, 0);
+      --yellow: rgb(255, 255, 0);
+      --low-gray: rgb(70, 70, 70);
+      --medium-gray: rgb(50, 50, 50);
+      --high-gray: rgb(30, 30, 30);
+
+}
