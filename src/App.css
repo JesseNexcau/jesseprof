@@ -1,0 +1,66 @@
+.page{
+      width: 100vw;
+      min-height: 100vh;
+      height: 100%;
+      background-color: var(--dark-color);
+      
+}
+
+
+.title-name{
+      color: white;
+      font-size: 40px;
+      font-weight: 500;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.s-txt{
+      color: white;
+      font-size: 18px;
+}
+
+#contact-div{
+      width: 100vw;
+      padding: 20px;
+      text-align: center;
+}
+.contact-btn{
+      background-color: rgb(0, 255, 229);
+      color: black;
+      border-bottom: 4px solid rgb(0, 120, 120);
+      
+      font-size: 40px;
+      font-weight: 700;
+}
+
+body{
+      overflow-x: hidden;
+}
+a{
+      text-decoration: none;
+      
+}
+p{
+      margin: 0;
+      padding: 0;
+}
+button{
+      border: none;
+}
+button:hover{
+      cursor: pointer;
+}
+*{
+      box-sizing: border-box;
+}
+html{
+      scroll-behavior: smooth;
+}
+:root {
+      --dark-color: #262033;
+      --rdark-color: #201b2f;
+      --med-color: #3f3e50;
+      --light-color: #5e5c79;
+}
