@@ -48,17 +48,17 @@ function AboutMe() {
                               <div className='abtme-i-img'>
                                     <div className='btns-linksme'>
                                           <div className='btn-linkme'>
-                                                <a href='#'>
+                                                <a target="_blank" href='https://github.com/JesseNexcau'>
                                                       <FontAwesomeIcon icon={faGithub} />
                                                 </a>
                                           </div>
                                           <div className='btn-linkme'>
-                                                <a href='#'>
+                                                <a target="_blank" href='https://www.linkedin.com/in/ojessegomes/'>
                                                       <FontAwesomeIcon icon={faLinkedin} />
                                                 </a>
                                           </div>
                                           <div className='btn-linkme'>
-                                                <a href='#'>
+                                                <a target="_blank" href='https://youtube.com/nexcauvirtuoso'>
                                                       <FontAwesomeIcon icon={faYoutube} />
                                                 </a>
                                           </div>
