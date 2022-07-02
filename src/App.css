@@ -3,22 +3,24 @@
       min-height: 100vh;
       height: 100%;
       background-color: var(--dark-color);
-      
+      display: flex;
+      flex-direction: column;
 }
 
 
 .title-name{
+      font-family: "DM Mono", monospace;
       color: white;
       font-size: 40px;
-      font-weight: 500;
+      font-weight: 600;
       width: fit-content;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 50px;
 }
 
 .s-txt{
       color: white;
-      font-size: 18px;
 }
 
 #contact-div{
@@ -35,6 +37,13 @@
       font-weight: 700;
 }
 
+.right{
+      margin-left: auto;
+}
+.left{
+      margin-right: auto;
+}
+
 body{
       overflow-x: hidden;
 }
@@ -42,7 +51,7 @@ a{
       text-decoration: none;
       
 }
-p{
+a, p{
       margin: 0;
       padding: 0;
 }
