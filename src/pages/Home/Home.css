@@ -5,6 +5,38 @@
       --magenta: #d000c5;
 }
 
+.navbar{
+      position: absolute;
+
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);     
+      z-index: 2;
+
+}
+
+.navlink{
+      margin-bottom: 40px;
+}
+
+.navlink a{
+      background-color: rgba(50,50,50);
+      border: 2px solid white;
+      padding: 14px;
+      
+      font-weight: bold;
+      color: white;
+
+      font-size: calc(18px + (24 - 18) * (50vw - 500px) / (800 - 400));
+}
+
 .copy-div {
       width: 100vw;
 }
@@ -12,17 +44,17 @@
 .copy-img {
       width: 100vw;
       min-height: 72vh;
-      /* background-color: var(--rdark-color); */
+      background: linear-gradient(var(--purple), var(--blue));
       text-align: center;
 
-      background-image: url("../../images/juanjobg.jpg");
+      /* background-image: url("../../images/juanjobg.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
       background-size: cover;
 
       filter: blur(8px);
-      -webkit-filter: blur(3px);
+      -webkit-filter: blur(3px); */
 }
 
 .copy-title {
@@ -35,6 +67,7 @@
       top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
+
       z-index: 2;
 
       max-width: 900px;
@@ -44,21 +77,25 @@
 
       overflow: hidden;
       
-
-      animation: show 2s;
-
+      animation: uptitle 1s;
 }
 
-@keyframes show {
-      0%{
-            padding: 0;
-            height: 0.1px;
+@keyframes uptitle {
+      from{
+            top: -60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform: scale(1%);
       }
-      100%{
-            padding: 12px;
-            height: 150px;
+      to{
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
       }
+      
+      
 }
+
 .copy-titletxt{
       font-size: calc(50px + (24 - 16) * (100vw - 200px) / (800 - 400));
 }
@@ -93,19 +130,14 @@
 
 
 
-.aboutme-div {
+.abtme-div {
       width: 100vw;
       background: linear-gradient(var(--blue), var(--ltblue));
       padding-top: 50px;
-      padding-bottom: 150px;
-      display: flex;
+      padding-bottom: 100px;
 }
 
-.aboutme-svg {
-      position: relative;
-}
-
-.aboutme-content {
+.abtme-content {
       max-width: 1000px;
       margin-left: auto;
       margin-right: auto;
@@ -118,11 +150,13 @@
       margin-top: 20px;
       display: flex;
       flex-direction: row;
+      
+      box-shadow: 2px 3px 15px 1px black;
 }
 .abtme-i-img{
+      min-width: 140px;
       max-width: 200px;
       width: 100vw;
-      min-width: 140px;
       min-height: 200px;
       height: auto;
 
@@ -149,41 +183,45 @@
       text-align: center;
       
 }
-.btn-linkme a:hover{
-      color: #15e0ff;
-}
 .btn-linkme a{
       color: white;
       font-size: 30px;
+}
+.btn-linkme a:hover{
+      color: #15e0ff;
 }
 
 
 .abtme-txt {
       font-family: "DM Mono", monospace;
-      font-size: calc(16px + (24 - 16) * (80vw - 200px) / (800 - 400));
+      font-size: calc(16px + (24 - 16) * (60vw - 200px) / (800 - 400));
       padding: 15px;
       margin-left: auto;
       margin-right: auto;
 }
-.abtme-2{
+.abtme-more{
       margin-left: auto;
       margin-right: auto;
-      margin-top: 50px;
+      margin-top: 80px;
       max-width: 800px;
 }
-.abtme-txt2{
+.abtme-more p{
       background-color: rgba(0, 0, 0, 0.4);
       font-family: "DM Mono", monospace;
-      font-size: calc(14px + (24 - 16) * (50vw - 200px) / (800 - 400));
+      font-size: calc(18px + (24 - 16) * (100% ) / (800 - 400));
       padding: 15px;
       margin-bottom: 20px;
-      max-width: 700px;
+      width: 100%;
+
+      border-bottom: 3px solid goldenrod;
+
+      box-shadow: 2px 3px 5px black;
 }
 
-.aboutme-habilits {
+.abtme-habilits {
       max-width: 1000px;
       
-      display: none;
+      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
 
@@ -192,27 +230,28 @@
       margin-right: auto;
 }
 
-.aboutme-hability {
-      background-color: rgba(0, 0, 0, 0.4);
+.abtme-hability {
       margin-inline: auto;
-      width: 300px;
+      min-width: 300px;
+      width: 40%;
 }
-.s-txt{
-      width: 100%;
-      overflow: hidden;
+.abtme-hability details{
+      background-color: rgba(0, 0, 0, 0.4);
+      padding-bottom: 6px;
 }
 
-
-.aboutme-h-title {
+.abtme-h-title {
       width: 100%;
       background-color: rgba(30, 30, 30);
       font-weight: 700;
       text-align: center;
-
+      
       padding: 8px;
 }
 
-.aboutme-h-title:hover{
+
+
+.abtme-h-title:hover{
       cursor: pointer;
 }
 
@@ -223,8 +262,9 @@
 
 
 .projects-div {
-      position: relative;
-      background-color: --rdark-color;
+      background-color: rgb(30, 30, 30);
+
+      /* background: linear-gradient(var(--ltblue), var(--purple)); */
       width: 100vw;
       margin-top: auto;
       padding-top: 40px;
@@ -232,12 +272,14 @@
 }
 
 .projects-list {
+      padding-block: 30px;
       max-width: 1000px;
       margin-left: auto;
       margin-right: auto;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-evenly;
 }
 
 .project-div {
@@ -278,31 +320,34 @@
 /* ____________________________________________________ */
 /* ____________________________________________________ */
 
+.contateme-div{
+      width: 100vw;
+      background: linear-gradient(var(--purple), var(--blue));
 
 
-
-.social-div {
-      background-color: rgb(62, 35, 105);
-      padding-top: 40px;
       padding-bottom: 40px;
+      padding-top: 40px;
 }
 
-.socials {
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+.contateme-methods{
+      width: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-evenly;
 }
 
-.social {
+.contateme-method{
+      color: var(--blue);
+      font-weight: bolder;
+
+      background-color: white;
       padding: 10px;
-      text-align: center;
+      margin-bottom: 8px;
 }
 
-.social-name {
-      color: white;
-      font-size: 34px;
+.contateme-method a{
+      color: black;
       font-weight: 500;
+      margin-inline: 6px;
 }

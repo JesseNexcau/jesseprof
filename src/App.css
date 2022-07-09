@@ -2,17 +2,20 @@
       width: 100vw;
       min-height: 100vh;
       height: 100%;
-      background-color: var(--dark-color);
+      background: rgb(20,20,30);
       display: flex;
       flex-direction: column;
 }
 
 
 .title-name{
-      font-family: "DM Mono", monospace;
       color: white;
+
+      font-family: "DM Mono", monospace;
       font-size: 40px;
       font-weight: 600;
+      text-transform: uppercase;
+
       width: fit-content;
       margin-left: auto;
       margin-right: auto;
@@ -44,6 +47,25 @@
       margin-right: auto;
 }
 
+/* .myanimate{
+      
+} */
+.myanimate-active{
+      animation: myanimate 1s;
+}
+
+@keyframes myanimate {
+      from{
+            opacity: 0.2;
+            transform: translate(100%, 30%);
+      }
+      to{
+            opacity: 1;
+            transform: translate(0%, 0%);
+      }
+}
+
+
 body{
       overflow-x: hidden;
 }
@@ -58,7 +80,7 @@ a, p{
 button{
       border: none;
 }
-button:hover{
+button:hover, .btn:hover{
       cursor: pointer;
 }
 *{
