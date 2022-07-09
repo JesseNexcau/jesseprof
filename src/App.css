@@ -6,26 +6,6 @@
       display: flex;
       flex-direction: column;
 }
-
-
-.title-name{
-      color: white;
-
-      font-family: "DM Mono", monospace;
-      font-size: 40px;
-      font-weight: 600;
-      text-transform: uppercase;
-
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 50px;
-}
-
-.s-txt{
-      color: white;
-}
-
 #contact-div{
       width: 100vw;
       padding: 20px;
