@@ -66,8 +66,8 @@ function AboutMe() {
                         </div>
 
                         <div className='more'>
-                              <p>Tenho experiência na criação de sites como Landding Pages e outros tipos de front-end utilizando React.js, html, css e Javascript puro também.</p>
-                              <p>Tenho experiência na construção de pequenos servidores e conheço muito bem a implementação de banco de dados. Eu costumo fazer o backend em Node.js, mas já me aventurei em PHP por um curto período de tempo.</p>
+                              <p>Tenho experiência na criação de sites como Landing Pages e outros tipos de front-end utilizando React.js, html, css e Javascript puro também.</p>
+                              <p>Tenho experiência na construção de pequenos servidores e conheço muito bem a implementação de banco de dados. Eu costumo fazer o back-end em Node.js, mas já me aventurei em PHP por um curto período de tempo.</p>
                               <p>Estou sempre aberto a novos aprendizados, amo o mundo da programação e quero prestar o meu melhor.</p>
                         </div>
 
