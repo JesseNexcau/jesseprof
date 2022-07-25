@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faGithub, faInstagramSquare, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faInstagramSquare, faLinkedin, faWhatsappSquare, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faArrowDownLong, faCoffee, faCopy, faEnvelopeCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -158,6 +158,11 @@ function Contateme() {
                               onClick={(e) => {
                                     e.preventDefault();
                                     copy('@jesse.gomesnx')
+                              }} icon={faCopy} /></p>
+                        <p className='method'><FontAwesomeIcon icon={faWhatsappSquare} /> WhatsApp: <a target="_blank" rel="noopener" href='https://wa.me/+5531989042283'>+55 31 98904-2283</a> <FontAwesomeIcon
+                              onClick={(e) => {
+                                    e.preventDefault();
+                                    copy('31989042283')
                               }} icon={faCopy} /></p>
                   </div>
             </ContactDiv>
